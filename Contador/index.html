@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador Vue.js</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="app.js" defer></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+</head>
+<body class="bg-gray-900">
+    <div id="app">
+        <div class="md:m-32 m-2 md:p-32 p-6 border-solid border-2 border-gray-200 ">
+            <h3 class="text-gray-200 text-center text-3xl">Contador Vue.js</h3>
+            <p class="pb-4 text-gray-200 text-center text-xs">Presione el botón (+) para incrementar el valor y el botón (-) para disminuir.</p>
+        <input type="text" class="w-full items-center text-center justify-center rounded-lg" v-model="valueContador" readonly>
+        <div class="flex mt-4">
+            <button class="bg-red-500 hover:bg-red-300 text-white font-bold rounded-lg flex items-center text-center justify-center w-full mr-4 p-4" @click="restar()">-</button>
+            <button class="bg-green-500 hover:bg-green-300 text-white font-bold rounded-lg flex items-center text-center justify-center w-full mr-4 p-4" @click="sumar()">+</button>
+        </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
