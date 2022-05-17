@@ -16,7 +16,6 @@ Vue.component("tabla-productos", {
             type: String,
             required: true
         },
-        //TODO: implementar props para cambiar color de letra y fondo de la tabla
     },
     template: `
         <div class="p-12">
